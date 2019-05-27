@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			li {
+				list-style: none;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			html {
+				font-size: 50px;
+			}
+
+			.wrapper {
+				padding: 0.65rem 0.40rem;
+				/* width: 100%; */
+			}
+
+			.wrapper .title h1 {
+				text-align: center;
+				font-size: 0.6rem;
+				font-weight: bolder;
+				margin: 0.66rem 0 0.32rem 0;
+			}
+
+			.wrapper .header-img {
+				position: relative;
+				text-align: center;
+				margin-top: 0.92rem;
+			}
+
+			/* .wrapper .shadow {
+				position: absolute;
+				top: 0.45rem;
+				left: 6.36rem;
+				color: #fff;
+				width: 30%;
+				height: 85%;
+				background: rgba(0, 0, 0, 0.1);
+				border-radius: 50%;
+				margin: auto;
+				
+			} */
+			.wrapper .shadow span{
+				display:block;
+				text-align: center;
+				font-size: 0.35rem;
+			}
+
+			.wrapper .header-middle {
+				text-align: center;
+				opacity: 0.8;
+				font-size: 0.44rem;
+				font-weight: 500;
+				margin: 0.34rem 0;
+			}
+
+			.wrapper .header-bottom {
+				color: #8E8E8E;
+				font-size: 0.33rem;
+				font-weight: 500;
+				padding: 0.40rem;
+				border: 1px solid #CCCCCC;
+				border-radius: 0.21rem;
+			}
+
+			.wrapper .header-bottom ul li {
+				margin: 0.26rem 0;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			.wrapper .content {
+				width: 100%;
+				/* border: 1px solid red; */
+			}
+
+			.wrapper .content h2 {
+				font-size: 0.25rem;
+				color: #C0C0C0;
+				margin: 0.30rem 0;
+			}
+
+			.wrapper .content textarea {
+				width: 100%;
+				border: none;
+				background: #F2F2F2;
+				outline: none;
+				padding: 0.38rem;
+				/* 让textarea适应父盒子宽度 */
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+			}
+
+			textarea::-webkit-input-placeholder {
+				color: #000;
+			}
+
+			.footer {
+				width: 100%;
+			}
+
+			.footer a {
+				display: block;
+				height: 0.95rem;
+				line-height: 0.95rem;
+				background: #04B404;
+				font-size: 0.45rem;
+				color: #FFF;
+				text-align: center;
+				margin: 0.81rem 0;
+				opacity: 0.5;
+			}
+			@media screen and (max-width: 321px) {
+				html{
+					font-size: 40px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="title">
+				<h1>购买礼盒</h1>
+			</div>
+			<div class="header">
+				<div class="header-img">
+					<img src="img/dingdangoumai/15.png">
+					<!-- <div class="shadow">
+						<span>准备完毕！</span>
+					</div> -->
+				</div>
+				<div class="header-middle">
+					<p>年会系列礼盒</p>
+				</div>
+				<div class="header-bottom">
+					<ul>
+						<li><span>礼盒价格</span><span>199元</span></li>
+						<li><span>盒内礼品</span><span>52件</span></li>
+						<li><span>礼品总价值</span><span>3000~5000元</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content">
+				<h2>你的赠言</h2>
+				<textarea calss="area" rows="10" cols="10" placeholder="美女,一起吃个早饭~"></textarea>
+			</div>
+			<div class="footer">
+				<a href="2-4赠送成功.html">赠送</a>
+			</div>
+		</div>
+	</body>
+</html>

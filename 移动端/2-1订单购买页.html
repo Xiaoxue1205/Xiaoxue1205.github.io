@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			li {
+				list-style: none;
+			}
+
+			html {
+				font-size: 50px;
+			}
+
+			.wrapper {
+				padding: 0rem 0.50rem 0rem 0.50rem;
+			}
+
+			.wrapper .title h1 {
+				text-align: center;
+				font-size: 0.6rem;
+				font-weight: bolder;
+				margin: 0.66rem 0 0.32rem 0;
+			}
+
+			.wrapper .header {
+				position: relative;
+				/* border: 1px solid red; */
+			}
+
+			.wrapper .header a {
+				/* position: absolute; */
+				font-size: 0.45rem;
+				color: #333;
+				opacity: 0.8;
+			}
+
+			.wrapper .header a img {
+				width: 0.50rem;
+				margin: 0 0.3rem 0 0;
+
+			}
+
+			.header-top {
+				font-weight: 600;
+				margin-top: 0.43rem;
+				display: -webkit-flex;
+				display: flex;
+				justify-content: space-between;
+				flex-direction: row;
+			}
+
+			.header-top a:last-child {
+				font-weight: 100;
+				font-size: 0.40;
+			}
+
+			.header-img,
+			.header-imge {
+				display: flex;
+				justify-content: center;
+
+			}
+             
+			.header-imge{
+				margin: 0.48rem 0;
+			}
+			.header-imge img{
+				margin: 0.48rem 0;
+			}
+            .header-img img{
+            	max-width:80%;
+            }
+            .header-imge img{
+            	max-width:80%;
+            }
+			.header-middle {
+				font-weight: 600;
+			}
+
+			.header-bottom {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				font-size: 0.37rem;
+				color: #848484;
+				margin: 0.44rem 0;
+			}
+
+			.header-bottom img {
+				width: 0.32rem;
+			}
+
+			.content {
+				display: -webkit-flex;
+				display: flex;
+				justify-content: space-between;
+				flex-direction: row;
+			}
+
+			.content>div {
+				/* border: 1px solid red; */
+			}
+
+			.content ul {
+				display: -webkit-flex;
+				display: flex;
+				justify-content: space-around;
+				flex-direction: column;
+			}
+
+			.content ul li {
+				display: -webkit-flex;
+				display: flex;
+				flex-direction: column;
+				border: 1px solid #BDBDBD;
+				border-radius: 0.10rem;
+				box-shadow: 0 0 0.15rem #BDBDBD;
+				margin: 0.34rem 0;
+			}
+
+			.content ul li .top {
+				display: -webkit-flex;
+				display: flex;
+				justify-content: space-between;
+				flex-direction: row;
+				padding: 0.35rem 0.35rem 0.25rem 0.27rem;
+				border-bottom: 1px solid #BDBDBD;
+			}
+
+			.content ul li .top h2 {
+				font-size: 0.50rem;
+				font-weight: 500;
+				color: #A4A4A4;
+			}
+
+			.content ul li .top span {
+				display: block;
+			}
+
+			.content ul li .top span:first-of-type {
+				font-size: 0.68rem;
+				font-weight: 600;
+				color: #585858;
+				margin: 0.54rem 0;
+			}
+
+			.content ul li .top span:last-child {
+				font-size: 0.32rem;
+				font-weight: 100;
+				color: #BDBDBD;
+			}
+
+			.content ul li .top img {
+				margin: 0 0.76rem;
+				width: 1.68rem;
+			}
+
+			.content ul li .bottom {
+				text-align: center;
+			}
+
+			.content ul li .bottom img {
+				width: 0.5rem;
+			}
+
+			.content .content-left ul li:nth-child(2) h2 {
+				color: #CED8F6;
+			}
+
+			.content .content-left ul li:nth-child(3) h2 {
+				color: #81F7F3;
+			}
+
+			.content .content-left ul li:nth-child(4) h2 {
+				color: #D358F7;
+			}
+
+			.content .content-right ul li:nth-child(1) h2 {
+				color: #886A08;
+			}
+
+			.content .content-right ul li:nth-child(2) {
+				border: 2px solid #01DF3A;
+			}
+
+			.content .content-right ul li:nth-child(2) h2 {
+				color: #FFBF00;
+			}
+
+			.content .content-right ul li:nth-child(3) h2 {
+				color: #5858FA;
+			}
+
+			.content .content-right ul li:nth-child(4) h2 {
+				color: #FF00FF;
+			}
+
+			.wrapper p {
+				font-size: 0.45rem;
+				text-align: center;
+				color: #848484;
+				margin: 0.25rem 0;
+			}
+
+			.footer {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				padding: 0.35rem 0;
+			}
+
+			.footer span {
+				display: block;
+			}
+
+			.footer span:first-child {
+				font-size: 0.35rem;
+				color: #848484;
+			}
+
+			.footer span:last-child {
+				font-size: 0.68rem;
+				font-weight: 600;
+				/* color:#848484; */
+			}
+
+			.footer a {
+				display: inline-block;
+				width: 2.82rem;
+				height: 1.66rem;
+				background: #31B404;
+				color: #fff;
+				font-size: 0.5rem;
+				border-radius: 0.2rem;
+				text-align: center;
+				line-height: 1.66rem;
+			}
+
+			@media screen and (max-width: 321px) {
+				html {
+					font-size: 12px;
+				}
+			}
+
+			@media screen and (min-width: 322px) and (max-width:399px) {
+				html {
+					font-size: 18px;
+				}
+			}
+
+			@media screen and (min-width: 400px) and (max-width:766px) {
+				html {
+					font-size: 23px;
+				}
+			}
+
+			@media screen and (min-width: 767px) and (max-width:1022px) {
+				html {
+					font-size: 50px;
+				}
+			}
+			@media screen and (min-width: 1023px) {
+				html {
+					font-size: 65px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="title">
+				<h1>购买礼盒</h1>
+			</div>
+			<div class="header">
+				<div class="header-top">
+					<a href="#"><img src="img/dingdangoumai/1.png">礼盒包装</a>
+					<a href="#">赠礼须知</a>
+				</div>
+				<div class="header-img">
+					<img src="img/dingdangoumai/2.png">
+				</div>
+				<div class="header-imge">
+					<img src="img/dingdangoumai/3.png">
+				</div>
+				<div class="header-middle">
+					<a href="#"><img src="img/dingdangoumai/1.png">盒内礼品</a>
+				</div>
+				<div class="header-bottom">
+					<span class="">已选数量9</span>
+					<span>幸运礼品:iphone X <img src="img/dingdangoumai/4.png"></span>
+				</div>
+			</div>
+			<div class="content">
+				<div class="content-left">
+					<ul>
+						<li>
+							<div class="top">
+								<div class="c-left">
+									<h2>1级品质</h2>
+									<span>18元</span>
+									<span>（价值10-30元）</span>
+								</div>
+								<div class="c-right">
+									<img src="img/dingdangoumai/5.png">
+								</div>
+							</div>
+							<div class="bottom">
+								<img src="img/dingdangoumai/9.png">
+							</div>
+						</li>
+						<li>
+							<div class="top">
+								<div class="c-left">
+									<h2>3级品质</h2>
+									<span>68元</span>
+									<span>（价值40-80元）</span>
+								</div>
+								<div class="c-right">
+									<img src="img/dingdangoumai/7.png">
+								</div>
+							</div>
+							<div class="bottom">
+								<img src="img/dingdangoumai/9.png">
+							</div>
+						</li>
+						<li>
+							<div class="top">
+								<div class="c-left">
+									<h2>5级品质</h2>
+									<span>128元</span>
+									<span>（价值380-500元）</span>
+								</div>
+								<div class="c-right">
+									<img src="img/dingdangoumai/10.png">
+								</div>
+							</div>
+							<div class="bottom">
+								<img src="img/dingdangoumai/9.png">
+							</div>
+						</li>
+						<li>
+							<div class="top">
+								<div class="c-left">
+									<h2>7级品质</h2>
+									<span>388元</span>
+									<span>（价值980-1500元）</span>
+								</div>
+								<div class="c-right">
+									<img src="img/dingdangoumai/12.png">
+								</div>
+							</div>
+							<div class="bottom">
+								<img src="img/dingdangoumai/9.png">
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="content-right">
+					<ul>
+						<li>
+							<div class="top">
+								<div class="c-left">
+									<h2>2级品质</h2>
+									<span>38元</span>
+									<span>（价值10-30元）</span>
+								</div>
+								<div class="c-right">
+									<img src="img/dingdangoumai/6.png">
+								</div>
+							</div>
+							<div class="bottom">
+								<img src="img/dingdangoumai/9.png">
+							</div>
+						</li>
+						<li>
+							<div class="top">
+								<div class="c-left">
+									<h2>4级品质</h2>
+									<span>98元</span>
+									<span>（价值80-120元）</span>
+								</div>
+								<div class="c-right">
+									<img src="img/dingdangoumai/8.png">
+								</div>
+							</div>
+							<div class="bottom">
+								<img src="img/dingdangoumai/9.png">
+							</div>
+						</li>
+						<li>
+							<div class="top">
+								<div class="c-left">
+									<h2>6级品质</h2>
+									<span>98元</span>
+									<span>（价值80-120元）</span>
+								</div>
+								<div class="c-right">
+									<img src="img/dingdangoumai/11.png">
+								</div>
+							</div>
+							<div class="bottom">
+								<img src="img/dingdangoumai/9.png">
+							</div>
+						</li>
+						<li>
+							<div class="top">
+								<div class="c-left">
+									<h2>8级品质</h2>
+									<span>2018元</span>
+									<span>（价值1999-9999元）</span>
+								</div>
+								<div class="c-right">
+									<img src="img/dingdangoumai/13.png">
+								</div>
+							</div>
+							<div class="bottom">
+								<img src="img/dingdangoumai/9.png">
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<p>*暂不支持收货地区:新疆、青海、西藏、港澳台</p>
+			<hr>
+			<div class="footer">
+				<div class="f-left">
+					<span>共9件商品</span>
+					<span>￥0.00</span>
+				</div>
+				<div class="f-right">
+					<a href="2-2幸运礼品弹框.html">购买</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
